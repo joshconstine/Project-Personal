@@ -11,7 +11,7 @@ const pencil = {
 // PetList only renders one SinglePet. We'd like it to render a list of pets,
 // passed in as props.pets. Don't forget to add a unique key to each one!
 class ItemList extends React.Component {
-  render() {
+  render(props) {
     return (
       <>
         <div className="item-list">

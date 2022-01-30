@@ -6,8 +6,9 @@ class SingleItem extends Component {
   }
   state = {};
   render(props) {
-    return <div>'hello can you hear me'</div>;
+    return <div className="single-item">'hello can you hear me '</div>;
   }
 }
+//currently trying to display infromation from react to the browser window
 
 export default SingleItem;

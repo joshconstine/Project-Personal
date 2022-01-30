@@ -47809,7 +47809,7 @@ var ItemList = /*#__PURE__*/function (_React$Component) {
 
   _createClass(ItemList, [{
     key: "render",
-    value: function render() {
+    value: function render(props) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "item-list"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SingleItem__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -47950,12 +47950,15 @@ var SingleItem = /*#__PURE__*/function (_Component) {
   _createClass(SingleItem, [{
     key: "render",
     value: function render(props) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "'hello can you hear me'");
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "single-item"
+      }, "'hello can you hear me '");
     }
   }]);
 
   return SingleItem;
-}(Component);
+}(Component); //currently trying to display infromation from react to the browser window
+
 
 /* harmony default export */ __webpack_exports__["default"] = (SingleItem);
 
@@ -47978,7 +47981,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Root__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Root */ "./src/components/Root.js");
+/* harmony import */ var _components_Root_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Root.js */ "./src/components/Root.js");
 
 
 
@@ -47986,7 +47989,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Root__WEBPACK_IMPORTED_MODULE_4__["default"], null);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Root_js__WEBPACK_IMPORTED_MODULE_4__["default"], null);
 };
 
 react_dom__WEBPACK_IMPORTED_MODULE_3___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(App, null), document.getElementById("app"));
