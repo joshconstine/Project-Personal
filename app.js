@@ -17,28 +17,19 @@ const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
 
-
-
-
 app.get("/", (req, res) => {
-  res.json(getItems());
+  res.json("hello world");
 });
-
-
-
 
 // Webpack Dev Middleware
 const compiler = webpack(webpackConfig);
 app.use(
   middleware(compiler, {
-     publicPath: join(__dirname, "public"),
+    publicPath: join(__dirname, "public"),
     publicPath: webpackConfig.output.publicPath,
     writeToDisk: true,
   })
 );
-
-
-
 
 //app.use(express.static(join(__dirname, 'public')));
 app.use(express.static("public"));
